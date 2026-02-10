@@ -18,7 +18,7 @@ There are many arguments which you can pass to this command for example,
 
 `docker run -d` -> Run container in background and print container ID
 `docker run -p` -> Port mapping
-
+docker run -d --name login nginx:latest --give the name of the container
 use `docker run --help` to look into more arguments.
 
 ### docker ps
@@ -50,6 +50,7 @@ Downloads an image from the configured registry.
 Uploads an image to the configured registry.
 
 ### docker exec
+docker exec -it <containerNAme> /bin/bash --login to the container
 
 Run a command in a running container.
 
