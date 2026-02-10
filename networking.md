@@ -3,7 +3,16 @@
 Networking allows containers to communicate with each other and with the host system. Containers run isolated from the host system
 and need a way to communicate with each other and with the host system.
 
+
+
+
 By default, Docker provides two network drivers for you, the bridge and the overlay drivers. 
+
+we have multiple way for networking 
+1 bridge networking
+2. host networking
+3. overlay networking
+4. customer networking
 
 ```
 docker network ls
@@ -44,6 +53,7 @@ xxxxxxxxxxxx        host                host
 
 This new network can be attached to the containers, when you run these containers.
 
+## custom networking
 ```
 docker run -d --net=my_bridge --name db training/postgres
 ```
