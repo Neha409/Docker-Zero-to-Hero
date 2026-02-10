@@ -57,3 +57,8 @@ Run a command in a running container.
 ### docker network
 
 Manage Docker networks such as creating and removing networks, and connecting containers to networks.
+
+### docker inspect 
+to get complete info about the container 
+docker inspect <containername>
+
